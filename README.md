@@ -11,7 +11,6 @@
 
 - [Overview](#overview)
 - [MVP](#mvp)
-  - [Goals](#goals)
   - [Libraries and Dependencies](#libraries-and-dependencies)
   - [Client (Front End)](#client-front-end)
     - [Wireframes](#wireframes)
@@ -101,13 +100,14 @@ src
 | Task                | Priority | Estimated Time | Actual Time Invested | 
 | ------------------- | :------: | :------------: | :-----------: | 
 | Create Database    |    H     |     4 hrs      |     TBD     |   
-| Create CRUD Actions |    M     |     5 hrs      |     TBD     |    
-| Deploy Rails API |    H     |     2 hrs      |     TBD     |    
-| Create React App Skeleton |    M     |     3 hrs      |     TBD     |     
-| Map Screens |    H     |     16 hrs      |    TBD   |     
-| Styling |    H     |     3 hrs      |    TBD     |     
-| **TOTAL**               |          |     **31.5 hrs**     |     **TBD**     |     
-
+| Back End CRUD|    M     |     5 hrs      |     TBD     |    
+| React Skeleton Build |    H     |     3 hrs      |     TBD     |    
+| Connect to API |    M     |     3 hrs      |     TBD     |     
+| Front End CRUD |    H     |     5hrs      |    TBD   |     
+| Styling( CSS, Flexbox) |    H     |     5 hrs      |    TBD     |  
+| Code Review / Clean-Up / Comment | H | 3hrs | hrs | TBD |
+| Deployment  | H | 1hrs | hrs | TBD |
+| **TOTAL**               |          |     **29.00 hrs**     |     **TBD**     |     
 
 
 <br>
@@ -122,12 +122,15 @@ https://cloud.smartdraw.com/share.aspx/?pubDocShare=3AB6FC5FDA7913D53D9DFCEFB444
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- Add photos to each affirmation as it changes 
+- Having a user login 
+
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+"To be continued"
 
 ## Code Issues & Resolutions
+ 
+ " To be continued"
 
-> Use this section to list of all major issues encountered and their resolution.
