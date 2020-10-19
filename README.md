@@ -52,14 +52,12 @@ I.AM.ME is positive affrimation app that will be there for your everyday persona
 
 ### Client (Front End)
 
-## Wireframes
+## Wireframe
 https://xd.adobe.com/view/4f05b8c2-dbea-484b-94da-f992bf8064c5-1a56/
-
 
 ## Component Tree
 [Diagram]
-https://cloud.smartdraw.com/share.aspx/?pubDocShare=3AB6FC5FDA7913D53D9DFCEFB4440F0AA30
-
+https://cloud.smartdraw.com/readonly.aspx?depoId=22045404&credID=-32136455&pubDocShare=3AB6FC5FDA7913D53D9DFCEFB4440F0AA30
 
 ## Component Hierarchy
 
