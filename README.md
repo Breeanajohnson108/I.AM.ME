@@ -33,6 +33,7 @@ I.AM.ME is positive affrimation app that will be there for your everyday persona
 - Front End CRUD: Render categories on home page; create, edit and delete functionality on the "make own affirmation page; Repeat/Like affirmations components
 - CSS for all screens and components.
 - Deployment to Heroku and Netlify.
+- Create login page 
 <br>
 
 ## Libraries and Dependencies
@@ -124,7 +125,7 @@ https://cloud.smartdraw.com/share.aspx/?pubDocShare=3AB6FC5FDA7913D53D9DFCEFB444
 ## Post-MVP
 
 - Add photos to each affirmation as it changes 
-- Having a user login 
+- Favorites Page (Button)
 
 
 ## Code Showcase
