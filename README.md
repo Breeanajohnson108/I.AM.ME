@@ -4,7 +4,8 @@
 # I.AM.ME
 
 ## Project Description
- I.AM.ME is positive affrimation app that will be there for your everyday personal needs, either you are having good day or bad. We will be here every step of the way.
+This is a Ruby on Rails app using React to build the front end.
+I.AM.ME is positive affrimation app that will be there for your everyday personal needs, either you are having good day or bad. We will be here every step of the way. 
 <br>
 
 ## Overview
@@ -94,6 +95,7 @@ src
 | Favorites | functional |   n   |   n   | _Favorites will show all the user favorite quotes ._                 |
 |    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
 
+
 ## Time Estimates
 
 
@@ -105,14 +107,15 @@ src
 | Connect to API |    M     |     3 hrs      |     TBD     |     
 | Front End CRUD |    H     |     5hrs      |    TBD   |     
 | Styling( CSS, Flexbox) |    H     |     5 hrs      |    TBD     |  
-| Code Review / Clean-Up / Comment | H | 3hrs | hrs | TBD |
-| Deployment  | H | 1hrs | hrs | TBD |
+| Code Review / Clean-Up / Comment | H | 3 hrs | TBD| TBD |
+| Deployment  | H | 1 hr | TBD| TBD |
 | **TOTAL**               |          |     **29.00 hrs**     |     **TBD**     |     
 
 
 <br>
 
 ### Server (Back End)
+
 
 ## ERD Model
 
