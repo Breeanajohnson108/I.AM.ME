@@ -120,7 +120,7 @@ src
 
 https://cloud.smartdraw.com/share.aspx/?pubDocShare=3AB6FC5FDA7913D53D9DFCEFB4440F0AA30
 
-![Screenshot](https://i.ibb.co/0qvJRks/Capture2.png)
+![Screenshot](https://i.ibb.co/XLrKNTj/Screen-Shot-2020-10-19-at-3-22-48-PM.png)
 
 ## Post-MVP
 
