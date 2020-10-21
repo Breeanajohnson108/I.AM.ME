@@ -8,4 +8,4 @@ const iameApi = axios.create({
   baseURL: baseUrl
 })
 
-export default applicationCache;
+export default iameApi;

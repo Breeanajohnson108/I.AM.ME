@@ -1,10 +1,10 @@
-import api from './api-config'
+import iameApi from './api-config'
 
 //Register api
 export let register = async (regData) =>
 {
   //Target endpoint
-  const response = await api.post('/users', { user: regData })
+  const response = await iameApi.post('/users', { user: regData })
   //Setting my token in a variable called "localStorage"
   localStorage.setItem('authToken', response.data.token);
   //Attaching string "Bearer" to my header
@@ -16,11 +16,11 @@ export let register = async (regData) =>
 export let logIn = async (logData) =>
 {
   //Target endpoint
-  const response = await api.post('/auth/login', { authorization: logData })
+  const response = await iameApi.post('/auth/login', { authorization: logData })
   //Setting my token in a variable called "localStorage"
   localStorage.setItem('authToken', response.data.token);
   //Attaching string "Bearer" to my header
-  api.defaults.headers.common.authorization = `Bearer ${response.data.token}`;
+  iameApi.defaults.headers.common.authorization = `Bearer ${response.data.token}`;
   //Returning User data
   return response.data.user;
 }
@@ -34,7 +34,7 @@ export let verify = async () =>
   {
     api.defaults.headers.common.authorization = `Bearer ${token}`;
     //target endpoint
-    const response = await api.get('auth/verify');
+    const response = await iameApi.get('auth/verify');
     //returning data
     return response.data
   }
