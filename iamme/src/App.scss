@@ -1,0 +1,172 @@
+/******************************
+*                             *
+*      Normal Screen          *
+*                             * 
+*******************************/
+
+    /*****************
+    *                *
+    *     Miscs      *
+    *                *
+    ******************/
+
+body
+{
+  background-color: #fec85f;
+}
+
+    /*****************
+    *                *
+    *     Header     *
+    *                *
+    ******************/
+
+#navBar
+{
+  background-color: #64491aed;
+  padding: 5px;
+}
+
+#logo
+{
+  width: 25px;
+  display: inline;
+  margin-left: 45%;
+  margin-bottom: -3px;
+}
+
+#navTitle
+{
+  color: white;
+  display: inline;
+  margin-left: 20px;
+  font-size: 3.5vh;
+}
+
+    /*****************
+    *                *
+    *     Title      *
+    *                *
+    ******************/
+
+
+#subTitle
+{
+  color: white;
+  margin-left: 27%;
+  margin-top: -80px;
+}
+
+#titleContainer
+{
+  margin-bottom: -325px;
+}
+
+/* Credit goes to code pen for css*/
+$size: 20px;
+
+h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	font-weight: normal;
+	width: 100%;
+	text-align: center;
+	font-family: 'Bungee Shade', cursive;
+	font-size: 10vw;
+	background: linear-gradient(
+		-45deg, 
+		#64491aed 25%, 
+		#feac5e 25%, 
+		#feac5e 50%, 
+		#64491aed 50%, 
+		#64491aed 75%, 
+		#feac5e 75%, 
+		#feac5e);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: $size $size;
+	background-position: 0 0;
+	animation: stripes 1s linear infinite;
+}	
+
+@keyframes stripes {
+	100% { 
+		background-position: $size 0, $size 0, $size 0;
+	}
+}
+
+
+    /*****************
+    *                *
+    *     Footer     *
+    *                *
+    ******************/
+
+footer
+{
+  position: relative;
+  margin-top: 650px;
+  margin-left: 40%;
+  clear: both;
+  
+}
+
+
+
+    /*****************
+    *                *
+    *     Buttons    *
+    *                *
+    ******************/
+
+#authBtnContainer
+{
+  margin-top: 398px;
+  margin-left: 42%;
+  margin-bottom: -469px;
+}
+
+#nUser
+{
+  width: 150px;
+  height: 75px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #64491aed;
+  border: none;
+  color: white;
+}
+
+#eUser
+{
+  width: 150px;
+  height: 75px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #64491aed;
+  border: none;
+  color: white;
+}
+
+
+/******************************
+*                             *
+*      Mobile Screen          *
+*                             * 
+*******************************/
+
+/******************************
+*                             *
+*      Tablet Screen          *
+*                             * 
+*******************************/
+
+/******************************
+*                             *
+*   Large Desktop Screen      *
+*                             * 
+*******************************/
+

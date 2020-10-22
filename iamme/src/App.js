@@ -1,12 +1,18 @@
 import React from 'react';
-import './App.css';
+import { Route, Switch } from 'react-router';
+import './App.scss';
+import Layout from './layouts/Layout';
+import Login from './layouts/Login';
 
 function App() {
   return (
-    <div className="App">
-      
-      
-    </div>
+    <Layout>
+      {/* <Switch>
+        <Route path='/login'>
+          <Login />
+        </Route>
+      </Switch> */}
+    </Layout>
   );
 }
 
