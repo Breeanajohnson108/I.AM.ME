@@ -28,7 +28,7 @@ export default function Login(props) {
     <div>
       <Header />
       <Title />
-      <form id="loginForm" onSubmit={(e) =>
+      <form id="loginForm" action='/home' onSubmit={(e) =>
       {
         e.preventDefault();
         handleLogin(formData);
@@ -50,7 +50,7 @@ export default function Login(props) {
         <label id="passwordLabel">
           Password:
           <input
-            type="text"
+            type="password"
             value={password}
             name="password"
             onChange={handleChange}

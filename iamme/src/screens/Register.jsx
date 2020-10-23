@@ -31,7 +31,7 @@ export default function Register(props) {
     <div>
       <Header />
       <Title />
-      <form id="loginForm" onSubmit={(e) =>
+      <form id="loginForm" action='home.jsx' onSubmit={(e) =>
       {
         e.preventDefault();
         handleRegister(formData);
@@ -71,13 +71,13 @@ export default function Register(props) {
         <label id="passwordLabel">
           Password:
           <input
-            type="text"
+            type="password"
             value={password}
             name="password"
             onChange={handleChange}
           />
         </label>
-        <button>Register</button>
+        <button type="submit">Register</button>
       </form>
       <Footer />
     </div>

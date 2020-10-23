@@ -15,13 +15,17 @@ import Health from './screens/Health'
 import Believe from './screens/Believe'
 import Edit from './screens/Edit'
 import Create from './screens/Create'
+import { useHistory } from 'react-router-dom';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
+  const history = useHistory();
+
   const handleLogin = async (logData) =>
   {
     const userData = await logIn(logData)
-    setCurrentUser(userData)
+    setCurrentUser(userData);
+    history.push('/home')
   }
   const handleRegister = async (regData) =>
   {
