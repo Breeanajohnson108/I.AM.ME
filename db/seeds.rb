@@ -14,10 +14,12 @@ User.destroy_all
 @user = User.create(firstname: 'John', lastname: 'Doe', email: 'johndoe21@gmail.com', password: '123456')
 
 @generalA = Affirmation.create(affirmations:"ga", user_id:@user.id)
-@loveA = Affirmation.create(affirmations: "love a", user_id:@user)
-@believeA = Affirmation.create(affirmations: "sunshine", user_id:@user)
-@careerA = Affirmation.create(affirmations: "stars", user_id:@user)
-@healthA = Affirmation.create(affirmations: "flowers", user_id:@user)
+@loveA = Affirmation.create(affirmations: "love a", user_id:@user.id)
+@believeA = Affirmation.create(affirmations: "sunshine", user_id:@user.id)
+@careerA = Affirmation.create(affirmations: "stars", user_id:@user.id)
+@healthA = Affirmation.create(affirmations: "flowers", user_id:@user.id)
+
+
 
 # Category.create(name: 'General', affirmation_id: 1)
 # Category.create(name: 'Attract Love', affirmation_id: 2)
