@@ -8,7 +8,7 @@ export let register = async (regData) =>
   //Setting my token in a variable called "localStorage"
   localStorage.setItem('authToken', response.data.token);
   //Attaching string "Bearer" to my header
-  api.defaults.headers.common.authorization = `Bearer ${response.data.token}`;
+  iameApi.defaults.headers.common.authorization = `Bearer ${response.data.token}`;
   //Returning User data
   return response.data.user;
 }
@@ -32,7 +32,7 @@ export let verify = async () =>
   //Attaching token to my headers
   if (token)
   {
-    api.defaults.headers.common.authorization = `Bearer ${token}`;
+    iameApi.defaults.headers.common.authorization = `Bearer ${token}`;
     //target endpoint
     const response = await iameApi.get('auth/verify');
     //returning data
@@ -43,5 +43,5 @@ export let verify = async () =>
 //Clearing all headers when we log out
 export const remove = () =>
 {
-  api.defaults.headers.common.authorization = null;
+  iameApi.defaults.headers.common.authorization = null;
 }

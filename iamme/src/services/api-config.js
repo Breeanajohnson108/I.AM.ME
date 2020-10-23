@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-baseUrl = 'http://localhost:3000/';
+const baseUrl = 'http://localhost:3000/';
 
 //Creating instance of api
 
