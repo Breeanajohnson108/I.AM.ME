@@ -11,9 +11,9 @@ Category.destroy_all
 Affirmation.destroy_all
 User.destroy_all
 
-@user = User.create(firstname: 'John', lastname: 'Doe', email: 'johndoe21@gmail.com', password: 'doej1')
+@user = User.create(firstname: 'John', lastname: 'Doe', email: 'johndoe21@gmail.com', password: '123456')
 
-@generalA = Affirmation.create(affirmations:"ga", user_id:@user)
+@generalA = Affirmation.create(affirmations:"ga", user_id:@user.id)
 @loveA = Affirmation.create(affirmations: "love a", user_id:@user)
 @believeA = Affirmation.create(affirmations: "sunshine", user_id:@user)
 @careerA = Affirmation.create(affirmations: "stars", user_id:@user)
