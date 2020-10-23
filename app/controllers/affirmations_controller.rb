@@ -1,11 +1,11 @@
 class AffirmationsController < ApplicationController
   before_action :set_affirmation, only: [:show, :update, :destroy]
-  before_action :authorize_request, only[:create, :update, :destroy]
+  # before_action :authorize_request, only[:create, :update, :destroy]
 
   # GET /affirmations
   def index
     @affirmations = Affirmation.all
-
+print @affirmations
     render json: @affirmations
   end
 
