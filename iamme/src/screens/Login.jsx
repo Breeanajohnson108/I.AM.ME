@@ -1,10 +1,12 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect } from "react";
+import { Redirect, useHistory } from 'react-router-dom'
 import Header from '../components/Header'
 import Title from '../components/Title'
 import {Link} from 'react-router-dom'
 import Footer from '../components/Footer'
 
 export default function Login(props) {
+  const history = useHistory()
   const [formData, setFormData] = useState(
     {
       email: " ",
@@ -58,8 +60,8 @@ export default function Login(props) {
           />
         </label>
         <br></br>
-        <button>Register</button>
-        <button>Log-In</button>
+        <Link id="lBtn" to='/register'>Register</Link>
+        <button id="lBtn">Log-In</button>
       </form>
       <Footer />
     </div>

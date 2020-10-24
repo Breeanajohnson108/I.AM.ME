@@ -225,6 +225,17 @@ footer
   box-shadow: 10px 10px 11px 5px rgba(0,0,0,0.56);
 }
 
+#lBtn
+{
+  color: white;
+  border: 2px solid #feac5e;
+  font-size: 10px;
+  background-color: #feac5e;
+  margin-right: 5px;
+  text-decoration: none;
+  padding: 5px;
+}
+
 #b
 {
   margin-top: 380px;
@@ -275,6 +286,7 @@ footer
   -moz-box-shadow: 10px 10px 11px 5px rgba(0,0,0,0.56);
   box-shadow: 10px 10px 11px 5px rgba(0,0,0,0.56);
 }
+
 
     /***************************
     *                         *

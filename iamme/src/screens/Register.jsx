@@ -81,7 +81,7 @@ export default function Register(props) {
           />
         </label>
         <br></br>
-        <button>Register</button>
+        <button id="lBtn">Register</button>
       </form>
       <Footer />
     </div>
