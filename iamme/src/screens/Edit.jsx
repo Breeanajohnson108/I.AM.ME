@@ -1,21 +1,64 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import { useParams, Redirect } from "react-router-dom";
+import { useHistory } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Title from '../components/Title'
+import { destroyAffirmation } from '../services/affirmations'
+import { getOneAffirmation } from '../services/affirmations'
+import {updateAffirmation} from '../services/affirmations'
 
-export default function Edit() {
+export default function Edit(props) {
+  const history = useHistory()
+  const [affirmation, setAffirmation] = useState({
+    name:""
+  })
+
+  const [isUpdated, setUpdated] = useState(false);
+
+  let { id } = useParams();
+
+  useEffect(() => {
+    const fetchAffirmation = async () => {
+      const affirmation = await getOneAffirmation(id);
+      setAffirmation(affirmation);
+    };
+    fetchAffirmation();
+  }, [id]);
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setAffirmation({
+      ...affirmation,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const updated = await updateAffirmation(id, affirmation);
+    setUpdated(updated);
+  };
+
+  if (isUpdated) {
+    return <Redirect to={`/myaffirmations`} />;
+  }
+
   return (
     <div>
       <Header />
       <Title />
-      <button id="back" to='/MyAffirmations'>Go Back</button>
-      <p id="gTitle">View/Edit Affirmation</p>
-      <form id="cForm">
-        <textarea id="textBox"></textarea>
+      <p id="aTitle">View/Edit Affirmation</p>
+      <Link id="eBack" to='/MyAffirmations'>Go Back</Link>
+      <form id="eForm" onSubmit={handleSubmit}>
+        <textarea rows="8" cols="50" onChange={handleChange}></textarea>
         <br></br>
-        <button id="cBtn">Create</button>
-        <button>Delete</button>
+        <button type='submit' id="eSave">Save</button>
+        <button onClick={() => {
+          destroyAffirmation(id)
+          history.push('/myaffirmations')
+        }} id="eDelete">Delete</button>
       </form>
       <Footer />
     </div>

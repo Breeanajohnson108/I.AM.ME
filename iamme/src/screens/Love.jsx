@@ -12,7 +12,7 @@ export default function Love() {
     <div>
       <Header />
       <Title />
-      <p id="gTitle">Categoty: Attract Love</p>
+      <p id="gTitle">Category: Attract Love</p>
       <img id="generalImg" src={loveImg}></img>
       <p id="affirmations">My affirmation</p>
       <ActionBtn />

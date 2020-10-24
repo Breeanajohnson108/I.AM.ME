@@ -23,7 +23,7 @@ export const destroyAffirmation = async (id) =>
 }
 
 //Create
-export const postaffirmation = async (affirmationData) =>
+export const postAffirmation = async (affirmationData) =>
 {
   const resp = await api.post(`affirmations`, { affirmations: affirmationData });
   return resp.data;

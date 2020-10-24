@@ -28,7 +28,7 @@ export default function Login(props) {
     <div>
       <Header />
       <Title />
-      <form id="loginForm" action='/home' onSubmit={(e) =>
+      <form id="loginForm" onSubmit={(e) =>
       {
         e.preventDefault();
         handleLogin(formData);
@@ -39,7 +39,7 @@ export default function Login(props) {
           <p>{error}</p>
         }
         <label id="emailLabel">
-          Email Address:
+          Email Address:<br></br>
           <input
             type="text"
             value={email}
@@ -47,8 +47,9 @@ export default function Login(props) {
             onChange={handleChange}
           />
         </label>
+        <br></br>
         <label id="passwordLabel">
-          Password:
+          Password:<br></br>
           <input
             type="password"
             value={password}
@@ -56,7 +57,8 @@ export default function Login(props) {
             onChange={handleChange}
           />
         </label>
-        <Link to='/register'>Register</Link>
+        <br></br>
+        <button>Register</button>
         <button>Log-In</button>
       </form>
       <Footer />

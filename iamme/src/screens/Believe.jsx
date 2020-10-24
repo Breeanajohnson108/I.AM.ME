@@ -11,7 +11,7 @@ export default function Believe() {
     <div>
       <Header />
       <Title />
-      <p id="gTitle">Categoty: Believe In Yourself</p>
+      <p id="gTitle">Category: Believe In Yourself</p>
       <img id="generalImg" src={believeImg}></img>
       <p id="affirmations">My affirmation</p>
       <ActionBtn />

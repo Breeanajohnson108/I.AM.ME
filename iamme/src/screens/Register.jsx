@@ -31,7 +31,7 @@ export default function Register(props) {
     <div>
       <Header />
       <Title />
-      <form id="loginForm" action='home.jsx' onSubmit={(e) =>
+      <form id="regForm" onSubmit={(e) =>
       {
         e.preventDefault();
         handleRegister(formData);
@@ -42,7 +42,7 @@ export default function Register(props) {
           <p>{error}</p>
         }
         <label id="emailLabel">
-          Firstname:
+          Firstname: <br></br>
           <input
             type="text"
             value={firstname}
@@ -50,8 +50,9 @@ export default function Register(props) {
             onChange={handleChange}
           />
         </label>
+        <br></br>
         <label id="emailLabel">
-          Lastname:
+          Lastname:<br></br>
           <input
             type="text"
             value={lastname}
@@ -59,8 +60,9 @@ export default function Register(props) {
             onChange={handleChange}
           />
         </label>
+        <br></br>
         <label id="emailLabel">
-          Email Address:
+          Email Address:<br></br>
           <input
             type="text"
             value={email}
@@ -68,8 +70,9 @@ export default function Register(props) {
             onChange={handleChange}
           />
         </label>
+        <br></br>
         <label id="passwordLabel">
-          Password:
+          Password:<br></br>
           <input
             type="password"
             value={password}
@@ -77,7 +80,8 @@ export default function Register(props) {
             onChange={handleChange}
           />
         </label>
-        <button type="submit">Register</button>
+        <br></br>
+        <button>Register</button>
       </form>
       <Footer />
     </div>

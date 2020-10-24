@@ -11,7 +11,7 @@ export default function Career() {
     <div>
       <Header />
       <Title />
-      <p id="gTitle">Categoty: Advance In Career</p>
+      <p id="gTitle">Category: Advance In Career</p>
       <img id="generalImg" src={careerImg}></img>
       <p id="affirmations">My affirmation</p>
       <ActionBtn />

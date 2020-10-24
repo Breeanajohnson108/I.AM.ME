@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, useHistory  } from 'react-router-dom';
 import './App.scss';
 import Layout from './layouts/Layout'
 import Login from './screens/Login';
 import Register from './screens/Register'
 import { logIn } from './services/authentatic';
+import { getOneAffirmation } from './services/affirmations'
 import { register } from './services/authentatic';
 import Home from './screens/Home';
 import MyAffirmations from './screens/MyAffirmations'
@@ -15,11 +16,19 @@ import Health from './screens/Health'
 import Believe from './screens/Believe'
 import Edit from './screens/Edit'
 import Create from './screens/Create'
-import { useHistory } from 'react-router-dom';
+
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
   const history = useHistory();
+
+  const [singleAffirmation, setSingleAffirmation] = useState(null)
+
+  const oneAffirmation = async (id) =>
+  {
+    const affirmationData = await getOneAffirmation(id)
+    setSingleAffirmation(affirmationData)
+  }
 
   const handleLogin = async (logData) =>
   {
@@ -31,15 +40,18 @@ function App() {
   {
     const userData = await register(regData)
     setCurrentUser(userData)
+    history.push('/home')
   }
   return (
     <div>
       <Switch>
         <Route exact path="/">
-            <Layout></Layout>
+          <Layout
+            currentUser={currentUser}
+          ></Layout>
         </Route>
         <Route path="/login">
-          <Login handleLogin={handleLogin} />
+          <Login currentUser={currentUser} handleLogin={handleLogin} />
         </Route>
         <Route path="/register">
             <Register handleRegister={handleRegister} />
@@ -69,7 +81,7 @@ function App() {
             <Create />
         </Route>
         <Route path="/myaffirmations">
-            <MyAffirmations />
+          <MyAffirmations singleAffirmation={singleAffirmation} oneAffirmation={oneAffirmation}/>
         </Route>
       </Switch>
     </div>

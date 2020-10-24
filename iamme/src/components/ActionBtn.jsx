@@ -7,13 +7,13 @@ import refreshImg from '../assets/refreshing.png'
 export default function ActionBtn() {
   return (
     <div id="actionBtn">
-      <Link>
+      <Link to="/MyAffirmations">
         <img className="imgBtn"  src={heartImg}></img>
       </Link>
       <Link to='/home'>
         <img className="imgBtn" src={homeImg}></img>
       </Link>
-      <Link to='/MyAffirmation'>
+      <Link >
         <img className="imgBtn" src={refreshImg}></img>
       </Link>
     </div>

@@ -10,11 +10,10 @@ export default function general() {
     <div>
       <Header />
       <Title />
-      <p id="gTitle">Categoty: General</p>
+      <p id="gTitle">Category: General</p>
       <img id="generalImg" src={generalImage}></img>
       <p id="affirmations">My affirmation</p>
       <ActionBtn />
-      <Footer />
     </div>
   )
 }

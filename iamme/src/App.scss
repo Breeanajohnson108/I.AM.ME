@@ -59,8 +59,8 @@ body
 
 #titleContainer
 {
-  margin-top: -80px;
-  margin-bottom: -325px;
+  margin-top: -40px;
+  margin-bottom: -455px;
 }
 
 /* Credit goes to code pen for css*/
@@ -120,6 +120,12 @@ footer
   margin-top: -550px;
 }
 
+#authFooter
+{
+  margin-top: -350px;
+  margin-left: 50px;
+}
+
 
 
     /*****************
@@ -130,9 +136,9 @@ footer
 
 #authBtnContainer
 {
-  margin-top: 398px;
+  margin-top: 598px;
   margin-left: 42%;
-  margin-bottom: -469px;
+  margin-bottom: 50px;;
 }
 
 #nUser
@@ -145,6 +151,7 @@ footer
   border: black 2px solid;
   color: white;
   padding: 20px;
+  text-decoration: none;
 }
 
 #eUser
@@ -157,6 +164,7 @@ footer
   border: black 2px solid;
   color: white;
   padding: 20px;
+  text-decoration: none;
 }
 
 #cBtn
@@ -164,10 +172,32 @@ footer
   margin-left: 65px;
 }
 
-#back
+
+#toReg
 {
-  margin-top: 350px;
-  margin-left: 20px;
+  border: #feac5e  2px solid;
+  color: white;
+  text-decoration: none;
+  background-color: #feac5e ;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+
+#chooseBox
+{
+  margin-top: 494px;
+  margin-left: 45%;
+  margin-bottom: -272px;
+}
+
+#myAffirm
+{
+  border: 2px #64491aed solid;
+  background-color: #64491aed;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 
@@ -180,7 +210,19 @@ footer
 #loginForm
 {
   margin-top: 480px;
-  margin-left: 50px;
+  color: white;
+  margin-left: 39%;
+  text-align: center;
+  border: 2px black solid;
+  border-radius: 20px;
+  width: 300px;
+  padding: 30px;
+  margin-bottom: -475px;
+  font-size: 2.5vh;
+  background-color: #64491aed;
+  -webkit-box-shadow: 10px 10px 11px 5px rgba(0,0,0,0.56);
+  -moz-box-shadow: 10px 10px 11px 5px rgba(0,0,0,0.56);
+  box-shadow: 10px 10px 11px 5px rgba(0,0,0,0.56);
 }
 
 #b
@@ -191,8 +233,11 @@ footer
 
 #actionBtn
 {
-  display: inline;
-  margin-left: 46%;
+  
+  float: left;
+  margin-left: 45%;
+  margin-bottom: 580px;
+  z-index: 999;
 }
 
 .imgBtn
@@ -213,6 +258,124 @@ footer
   height: 150px;
 }
 
+#regForm
+{
+  margin-top: 480px;
+  color: white;
+  margin-left: 40%;
+  text-align: center;
+  border: 2px black solid;
+  border-radius: 20px;
+  width: 300px;
+  padding: 30px;
+  margin-bottom: -575px;
+  font-size: 2.5vh;
+  background-color: #64491aed;
+  -webkit-box-shadow: 10px 10px 11px 5px rgba(0,0,0,0.56);
+  -moz-box-shadow: 10px 10px 11px 5px rgba(0,0,0,0.56);
+  box-shadow: 10px 10px 11px 5px rgba(0,0,0,0.56);
+}
+
+    /***************************
+    *                         *
+    *     Show Categories     *
+    *                         *
+    ***************************/
+
+    #categoryBox
+    {
+      margin-top: 352px;
+      margin-left: 22%;
+      text-align: center;
+    }
+
+    .boxes
+    {
+      display: inline;
+      float: left;
+      margin-right: 50px;
+    }
+
+    .boxes img:hover
+    {
+      width: 200px;
+      height: 100px;
+      
+    }
+
+    .boxes p 
+    {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .categoryImgs
+    {
+      width: 100px;
+      height: 60px;
+      border-radius: 5px;
+    }
+
+    /***************************
+    *                         *
+    *    My Affirmation       *
+    *                         *
+    ***************************/
+#aTitle
+{
+  color: white;
+  margin-top: 515px;
+  margin-left: 45%;
+}
+
+#myTitle
+{
+  margin-bottom: -225px;
+}
+
+#back
+{
+  margin-top: 350px;
+  margin-left: 20px;
+  color: white;
+  border: 2px solid #64491aed;
+  background-color: #64491aed;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+#own
+{
+  margin-top: 390px;
+  margin-left: 20px;
+  color: white;
+  border: 2px solid #64491aed;
+  background-color: #64491aed;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+#listBox
+{
+  margin-left: 33%;
+  border: 2px solid #64491aed;
+  background-color: #64491aed;
+  width: 400px;
+  text-align: center;
+  padding: 35px;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: -390px;
+}
+
+.eachALink
+{
+  text-decoration: none;
+  color: white;
+}
+
    /***************************
     *                         *
     *     General Category    *
@@ -229,23 +392,147 @@ footer
 
 #gTitle
 {
-  margin-top: 50px;
+  margin-top: 490px;
   margin-left: 47%;
   margin-bottom: -369px;
   color: white;
 }
 #affirmations
 {
-  margin-left: 5%;
+  margin-left: 37%;
   color: white;
   text-align: center;
   margin-bottom: 30px;
+  border: 2px solid #64491aed;
+  background-color: #64491aed;
+  color: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 50px;
 }
 
-#aTitle
+#gFooter
 {
-  margin-top: 385px;
+  margin-top: 1250px;
 }
+
+
+  /****************************
+    *                         *
+    *         Edit            *
+    *                         *
+    ***************************/
+
+#eBack
+{
+  margin-top: 350px;
+  margin-left: 20px;
+  color: white;
+  border: 2px solid #64491aed;
+  background-color: #64491aed;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+#eForm
+{
+  margin-top: 8px;
+  margin-left: 37%;
+  margin-bottom: -480px;
+}
+
+#eForm textarea
+{
+  border: 2px solid #64491aed;
+  background-color: #64491aed;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  
+}
+
+#eSave
+{
+  margin-left: 12%;
+  width: 80px;
+  height: 40px;
+  color: white;
+  border: 2px solid #64491aed;
+  background-color: #64491aed;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+#eDelete
+{
+  margin-left: 2%;
+  width: 80px;
+  height: 40px;
+  color: white;
+  border: 2px solid #64491aed;
+  background-color: #64491aed;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+    /**************************
+    *                         *
+    *         Create          *
+    *                         *
+    ***************************/
+
+    #cBack
+    {
+      margin-top: 350px;
+      margin-left: 20px;
+      color: white;
+      border: 2px solid #64491aed;
+      background-color: #64491aed;
+      padding: 15px;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    #cTitle
+    {
+
+    }
+
+    #cForm
+    {
+      margin-top: 8px;
+      margin-left: 37%;
+      margin-bottom: -480px;
+    }
+    
+    #cForm textarea
+    {
+      border: 2px solid #64491aed;
+      background-color: #64491aed;
+      text-align: center;
+      color: white;
+      border-radius: 10px;
+      
+    }
+    
+    #cCreate
+    {
+      margin-left: 12%;
+      width: 80px;
+      height: 40px;
+      color: white;
+      border: 2px solid #64491aed;
+      background-color: #64491aed;
+      padding: 15px;
+      border-radius: 10px;
+      text-decoration: none;
+      margin-bottom: -50px;
+    }
+
+
+
 
 
 /******************************

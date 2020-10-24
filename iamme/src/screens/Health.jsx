@@ -11,7 +11,7 @@ export default function Health() {
     <div>
       <Header />
       <Title />
-      <p id="gTitle">Categoty: Improve Health</p>
+      <p id="gTitle">Category: Improve Health</p>
       <img id="generalImg" src={healthImg}></img>
       <p id="affirmations">My affirmation</p>
       <ActionBtn />
