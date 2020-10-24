@@ -21,8 +21,8 @@ User.destroy_all
 
 
 
-# Category.create(name: 'General', affirmation_id: 1)
-# Category.create(name: 'Attract Love', affirmation_id: 2)
-# Category.create(name: 'Believe In Yourself', affirmation_id: 3)
-# Category.create(name: 'Advance In Career', affirmation_id: 4)
-# Category.create(name: 'Improve Health', affirmation_id: 5)
+ Category.create(name: 'General' )
+Category.create(name: 'Attract Love')
+Category.create(name: 'Believe In Yourself')
+Category.create(name: 'Advance In Career')
+Category.create(name: 'Improve Health')
