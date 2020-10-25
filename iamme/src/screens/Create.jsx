@@ -7,8 +7,13 @@ import Footer from '../components/Footer'
 import {postAffirmation} from '../services/affirmations'
 
 export default function Create(props) {
+  const { currentUser , oneAffirmation,handleCreateSubmit} = props 
+  console.log(currentUser)
+
   const [affirmation, setAffirmation] = useState({
-    name:""
+    affirmations: "",
+    user_id: currentUser.id
+    
   })
 
   const [isCreated, setCreated] = useState(false)
@@ -22,12 +27,7 @@ export default function Create(props) {
     })
   }
 
-  const handleSubmit = async (event) =>
-  {
-    event.preventDefault();
-    const created = await postAffirmation(affirmation)
-    setCreated({created})
-  }
+  
 
   if (isCreated)
   {
@@ -39,8 +39,11 @@ export default function Create(props) {
       <Title />
       <p id="aTitle">Add Your Own</p>
       <Link id="cBack" to='/MyAffirmations'>Go Back</Link>
-      <form id="cForm" onSubmit={handleSubmit}>
-        <textarea id="textBox" onChange={handleChange}></textarea>
+      <form id="cForm" onSubmit={(e) => { 
+        e.preventDefault()
+        handleCreateSubmit(affirmation)
+      }}>
+        <textarea id="textBox" name="affirmations" value={affirmation.affirmations} onChange={handleChange}></textarea>
         <br></br>
         <button type='submit' id="cCreate">Create</button>
       </form>

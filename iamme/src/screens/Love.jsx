@@ -7,15 +7,16 @@ import ActionBtn from '../components/ActionBtn'
 import loveImg from '../assets/love.jpg'
 
 
-export default function Love() {
+export default function Love(props) {
+  const{randoAffirmation}= props
   return (
     <div>
       <Header />
       <Title />
       <p id="gTitle">Category: Attract Love</p>
       <img id="generalImg" src={loveImg}></img>
-      <p id="affirmations">My affirmation</p>
-      <ActionBtn />
+      <p id="affirmations">{randoAffirmation}</p>
+      <ActionBtn randomAffirmations={props.randomAffirmations}/>
       <Footer />
     </div>
   )

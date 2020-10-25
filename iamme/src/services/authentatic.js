@@ -15,8 +15,9 @@ export let register = async (regData) =>
 //Login api
 export let logIn = async (logData) =>
 {
-  //Target endpoint
-  const response = await iameApi.post('/auth/login', { authorization: logData })
+  //Target endpoint 
+  console.log(logData)
+  const response = await iameApi.post('/auth/login', { authentication: logData })
   //Setting my token in a variable called "localStorage"
   localStorage.setItem('authToken', response.data.token);
   //Attaching string "Bearer" to my header

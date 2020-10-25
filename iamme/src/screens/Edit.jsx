@@ -12,9 +12,9 @@ import {updateAffirmation} from '../services/affirmations'
 export default function Edit(props) {
   const history = useHistory()
   const [affirmation, setAffirmation] = useState({
-    name:""
+    affirmations:""
   })
-
+  const {setAllAffirmations}=props
   const [isUpdated, setUpdated] = useState(false);
 
   let { id } = useParams();
@@ -38,6 +38,9 @@ export default function Edit(props) {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const updated = await updateAffirmation(id, affirmation);
+    setAllAffirmations(prevState => (prevState.map(aff => {
+      return aff.id === parseInt(id) ? updated : aff
+    })))
     setUpdated(updated);
   };
 
@@ -52,11 +55,12 @@ export default function Edit(props) {
       <p id="aTitle">View/Edit Affirmation</p>
       <Link id="eBack" to='/MyAffirmations'>Go Back</Link>
       <form id="eForm" onSubmit={handleSubmit}>
-        <textarea rows="8" cols="50" onChange={handleChange}></textarea>
+        <textarea rows="8" cols="50" name="affirmations" value={affirmation.affirmations} onChange={handleChange}></textarea>
         <br></br>
         <button type='submit' id="eSave">Save</button>
         <button onClick={() => {
           destroyAffirmation(id)
+          setAllAffirmations(prevState => prevState.filter(aff => aff.id !== parseInt(id)))
           history.push('/myaffirmations')
         }} id="eDelete">Delete</button>
       </form>

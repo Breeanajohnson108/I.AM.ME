@@ -18,20 +18,21 @@ export const getOneAffirmation = async (id) =>
 //Delete
 export const destroyAffirmation = async (id) =>
 {
-  const resp = await api.delete(`affirmations/${id}`);
+  const resp = await api.delete(`/affirmations/${id}`);
   return resp;
 }
 
 //Create
 export const postAffirmation = async (affirmationData) =>
 {
-  const resp = await api.post(`affirmations`, { affirmations: affirmationData });
+  console.log(affirmationData)
+  const resp = await api.post(`/affirmations`, { affirmation: affirmationData });
   return resp.data;
 }
 
 //Update
 export const updateAffirmation = async (id, updatedData) =>
 {
-  const resp = await api.put(`/affirmations/${id}`, { affirmations: updatedData });
+  const resp = await api.put(`/affirmations/${id}`, { affirmation: updatedData });
   return resp.data;
 }
