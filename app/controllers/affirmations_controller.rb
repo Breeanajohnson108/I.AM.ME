@@ -1,6 +1,6 @@
 class AffirmationsController < ApplicationController
   before_action :set_affirmation, only: [:show, :update, :destroy]
-  # before_action :authorize_request, only[:create, :update, :destroy]
+  before_action :authorize_request, only:[:create, :update, :destroy]
 
   # GET /affirmations
   def index
@@ -16,7 +16,9 @@ print @affirmations
 
   # POST /affirmations
   def create
-    @affirmation = Affirmation.new(affirmation_params)
+    print "hello"
+    print affirmation_params
+    @affirmation = Affirmation.create(affirmation_params)
     @affirmation.user = @current_user
 
     if @affirmation.save
@@ -48,6 +50,6 @@ print @affirmations
 
     # Only allow a trusted parameter "white list" through.
     def affirmation_params
-      params.require(:affirmation).permit(:affirmations)
+      params.require(:affirmation).permit(:affirmations,:user_id)
     end
 end
